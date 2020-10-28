@@ -15,9 +15,9 @@ To download weights of the model, click here. The model relies on these checkpoi
 
 # Model Verification
 
-When the model is run with the pretrained weights, it should predict the following results using the input images provided.
+When the model is run with the pretrained weights, it should predict the following result using the input images provided (image1 and image2 in the image folder).
 
-
+![](images/result.png)
 
 # Sources
 
