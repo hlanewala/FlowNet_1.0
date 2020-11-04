@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     model = flownet_s.FlowNet_S()
     model.build(input_shape=(None, 384,512, 6))
-    model.load_weights('C:/Users/hlane/Documents/Machine Learning/SpeedChallenge/FlowNet/FlowNetS_Checkpoints/flownet-S2')
+    model.load_weights('full path to weights')
     model.compile()
     model.summary()
     output = model(image)
