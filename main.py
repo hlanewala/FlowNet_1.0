@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     model = flownet_s.FlowNet_S()
     model.build(input_shape=(None, h, w, c))
-    model.load_weights('absolute path to weights')
+    model.load_weights('path to weights')
     model.compile()
     model.summary()
     output = model(image)
