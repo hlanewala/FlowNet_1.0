@@ -1,5 +1,4 @@
 #Use tensorflow 2.3 or newer
-import tensorflow as tf
 from submodules import *
 
 

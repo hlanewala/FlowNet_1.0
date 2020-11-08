@@ -11,12 +11,13 @@ if __name__ == '__main__':
     image2 = apply_transform(image2)
     image = np.concatenate([image1, image2], axis=-1) #for blue output background
     # image = np.concatenate([image2, image1], axis=-1) #for yellow output background
-    image = np.reshape(image, (1, 384,512, 6))
+    h, w, c = image.shape
+    image = np.reshape(image, (1, h, w, c))
     image = image.astype('float32')
 
     model = flownet_s.FlowNet_S()
-    model.build(input_shape=(None, 384,512, 6))
-    model.load_weights('full path to weights')
+    model.build(input_shape=(None, h, w, c))
+    model.load_weights('absolute path to weights')
     model.compile()
     model.summary()
     output = model(image)
