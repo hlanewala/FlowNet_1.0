@@ -1,3 +1,4 @@
+#Use tensorflow 2.3 or newer
 import tensorflow as tf
 
 def conv2D(batchNorm, filters, kernel_size=3, stride=1, name=None):

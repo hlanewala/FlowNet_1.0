@@ -1,4 +1,3 @@
-#Use tensorflow 2.3 or newer
 from submodules import *
 
 
